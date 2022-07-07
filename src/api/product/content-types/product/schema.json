@@ -20,12 +20,6 @@
       "type": "text",
       "required": true
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category",
-      "inversedBy": "product"
-    },
     "thumbnail": {
       "type": "media",
       "multiple": false,
@@ -59,6 +53,12 @@
     "color": {
       "type": "string",
       "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "products"
     }
   }
 }
