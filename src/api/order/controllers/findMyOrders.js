@@ -8,7 +8,7 @@ const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
   // Method 2: Wrapping a core action (leaves core logic in place)
-  async find(ctx) {
+  async findMyOrders(ctx) {
     // // some custom logic here
     // ctx.query = { ...ctx.query, local: "en" };
 

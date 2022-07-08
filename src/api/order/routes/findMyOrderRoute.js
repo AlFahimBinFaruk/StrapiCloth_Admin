@@ -3,7 +3,7 @@ module.exports = {
       {
         method: 'GET',
         path: '/order/findMyOrders',
-        handler: 'order.find',
+        handler: 'order.findMyOrders',
       }
     ]
   }
