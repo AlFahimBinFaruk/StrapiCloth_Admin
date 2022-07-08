@@ -3,7 +3,7 @@ module.exports = {
       {
         method: 'GET',
         path: '/order',
-        handler: 'custom.index',
+        handler: 'custom.findMyOrders',
       }
     ]
   }
