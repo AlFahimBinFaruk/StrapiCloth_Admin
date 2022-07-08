@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "orders"
-    },
     "orderDetails": {
       "type": "json",
       "required": true
@@ -53,6 +47,14 @@
         "Stripe"
       ],
       "default": "COD"
+    },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
     }
   }
 }
