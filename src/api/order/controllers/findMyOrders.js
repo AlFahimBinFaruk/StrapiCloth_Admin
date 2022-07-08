@@ -18,6 +18,6 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
     // // some more custom logic
     // meta.date = Date.now();
 
-    return { data:"test", meta:"test" };
+    ctx.send("hello world")
   },
 }));
