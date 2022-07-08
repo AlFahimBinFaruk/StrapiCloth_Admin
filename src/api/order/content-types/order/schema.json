@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "order"
+    "displayName": "order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,12 +42,17 @@
       "default": "pending",
       "required": true
     },
-    "paymentInfo": {
-      "type": "json"
-    },
     "address": {
       "type": "text",
       "required": true
+    },
+    "orderType": {
+      "type": "enumeration",
+      "enum": [
+        "COD",
+        "Stripe"
+      ],
+      "default": "COD"
     }
   }
 }
