@@ -3,7 +3,7 @@ module.exports = {
       {
         method: 'GET',
         path: '/order',
-        handler: 'cancel.index',
+        handler: 'custom.index',
       }
     ]
   }
